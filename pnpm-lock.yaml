@@ -1,0 +1,52 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@derekstride/tree-sitter-sql':
+        specifier: ^0.3.0
+        version: 0.3.0
+      tree-sitter:
+        specifier: ^0.21.1
+        version: 0.21.1
+
+packages:
+
+  '@derekstride/tree-sitter-sql@0.3.0':
+    resolution: {integrity: sha512-V1jn92VCkRHPqSu2pMgzKk3jquv/h0W35F0Z8dAKDC5Z3dLnRBGtEGSF+u8uAd62d4cEaKwfJw0Cp7l6Ugxdqw==}
+
+  nan@2.19.0:
+    resolution: {integrity: sha512-nO1xXxfh/RWNxfd/XPfbIfFk5vgLsAxUR9y5O0cHMJu/AW9U95JLXqthYHjEp+8gQ5p96K9jUp8nbVOxCdRbtw==}
+
+  node-addon-api@8.0.0:
+    resolution: {integrity: sha512-ipO7rsHEBqa9STO5C5T10fj732ml+5kLN1cAG8/jdHd56ldQeGj3Q7+scUS+VHK/qy1zLEwC4wMK5+yM0btPvw==}
+    engines: {node: ^18 || ^20 || >= 21}
+
+  node-gyp-build@4.8.0:
+    resolution: {integrity: sha512-u6fs2AEUljNho3EYTJNBfImO5QTo/J/1Etd+NVdCj7qWKUSN/bSLkZwhDv7I+w/MSC6qJ4cknepkAYykDdK8og==}
+    hasBin: true
+
+  tree-sitter@0.21.1:
+    resolution: {integrity: sha512-7dxoA6kYvtgWw80265MyqJlkRl4yawIjO7S5MigytjELkX43fV2WsAXzsNfO7sBpPPCF5Gp0+XzHk0DwLCq3xQ==}
+
+snapshots:
+
+  '@derekstride/tree-sitter-sql@0.3.0':
+    dependencies:
+      nan: 2.19.0
+
+  nan@2.19.0: {}
+
+  node-addon-api@8.0.0: {}
+
+  node-gyp-build@4.8.0: {}
+
+  tree-sitter@0.21.1:
+    dependencies:
+      node-addon-api: 8.0.0
+      node-gyp-build: 4.8.0
